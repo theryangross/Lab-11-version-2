@@ -8,3 +8,16 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<div class = "container">
+    <div class = "row">
+        <div class = "col-9">
+            @foreach(var p in Models.Professors)
+            {
+                <li>@p.FirstName
+                    @p.LastName
+                </li>
+            }
+        </div>
+    </div>
+</div>
